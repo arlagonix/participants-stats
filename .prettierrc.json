@@ -1,0 +1,24 @@
+{
+  "printWidth": 80,
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true,
+  "useTabs": false,
+
+  "overrides": [
+    {
+      "files": ["*.mjs", "*.cjs", "*.js"],
+      "options": {
+        "parser": "babel"
+      }
+    },
+
+    {
+      "files": ["*.mts", "*.cts", "*.ts"],
+      "options": {
+        "parser": "babel-ts"
+      }
+    }
+  ]
+}

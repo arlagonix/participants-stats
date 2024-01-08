@@ -1,0 +1,110 @@
+.tableWrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.table {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border-spacing: 0px;
+  width: max(100%, 500px);
+
+  & tr {
+    min-height: 48px;
+    padding: 16px;
+
+    & > * {
+      display: inline-block;
+    }
+
+    & > * {
+      width: 33.33%;
+    }
+
+    display: block;
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    line-height: 150%;
+
+    &:not(:last-child),
+    &:first-child {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  & th {
+    font-weight: 600;
+    text-align: left;
+  }
+
+  & tr {
+    font-weight: 400;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.probability {
+  font-weight: 600;
+  color: var(--color);
+}
+
+.inputGroup {
+  display: flex;
+  gap: 24px;
+  & > * {
+    flex-grow: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  width: 100%;
+  outline: none;
+
+  position: relative;
+  padding-left: 48px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  line-height: 100%;
+
+  &::placeholder {
+    color: #999; /* Your desired placeholder color */
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  translate: 0 -50%;
+}

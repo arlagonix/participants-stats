@@ -1,0 +1,65 @@
+.menu {
+  position: fixed;
+  min-height: 48px;
+  padding-left: 16px;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  background-color: #eee;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 1299px) {
+    display: none;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .logoWrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  .logo {
+    display: block;
+    translate: 0 -2px;
+  }
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: #fafafa;
+  padding-top: 48px;
+  z-index: 998;
+  height: 100%;
+
+  transition: opacity 0.3s ease;
+
+  .element {
+    & a {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      font-size: 20px;
+
+      color: #333;
+      text-decoration: none;
+    }
+  }
+
+  .element:not(:last-child) {
+    border-bottom: 2px solid #ddd;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

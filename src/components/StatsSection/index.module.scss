@@ -1,0 +1,217 @@
+.section {
+  padding-top: 24px;
+
+  @media (max-width: 500px) {
+    padding-top: 0;
+  }
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 8px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: -1px;
+
+  & button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition:
+      0.3s background-color,
+      0.3s border-color;
+  }
+
+  & button:first-child {
+    border-radius: 8px 0 0 8px;
+    border: 1px solid black;
+    border-right-width: 0.5px;
+  }
+  & button:last-child {
+    border-radius: 0 8px 8px 0;
+    border-left-width: 0px;
+  }
+
+  & button.active {
+    background-color: #ddd;
+    border: 1px solid black;
+  }
+
+  & button.inactive {
+    background-color: transparent;
+    border-color: #aaa;
+
+    &:first-child {
+      border-right-width: 0;
+    }
+
+    &:last-child {
+      border-left-width: 0;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+.description {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #333;
+  padding-top: 16px;
+  line-height: 150%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  margin-top: 24px;
+  background-color: white;
+}
+
+.barElement {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  cursor: default;
+
+  transition: 0.1s ease background-color;
+
+  &:first-child {
+    border-radius: 15px 15px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 15px 15px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgb(0 0 0 / 0.05);
+    }
+  }
+
+  .label {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+
+  .bar {
+    width: 100%;
+    background-color: #797fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    border-radius: 4px;
+    container-type: inline-size;
+
+    &.inactive {
+      background-color: #999;
+    }
+
+    .text {
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+    }
+
+    @container (width < 32px) {
+      .text {
+        font-size: 10px;
+      }
+    }
+
+    @container (width < 16px) {
+      .text {
+        display: none;
+      }
+    }
+  }
+}
+
+.table {
+  .row {
+    display: flex;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    padding: 16px;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+
+    & > *:nth-child(1) {
+      flex-grow: 1;
+    }
+
+    & > *:nth-child(2),
+    *:nth-child(3) {
+      min-width: 48px;
+      text-align: center;
+    }
+  }
+
+  // Adds a border under the header row
+  thead tr {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+  }
+
+  tbody tr {
+    transition: 0.1s ease background-color;
+    cursor: default;
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgb(0 0 0 / 0.05);
+      }
+      &:last-child {
+        border-radius: 0 0 15px 15px;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.displayNone {
+  display: none;
+}
+
+.hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
