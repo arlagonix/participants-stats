@@ -1,7 +1,7 @@
 {
-  "name": "funnel-frontend-web",
+  "name": "participants-stats",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,14 +37,6 @@
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/pineapple-practice/pp-02-12-ds-web/funnel-frontend-web.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/pineapple-practice/pp-02-12-ds-web/funnel-frontend-web/issues"
-  },
-  "homepage": "https://gitlab.com/pineapple-practice/pp-02-12-ds-web/funnel-frontend-web#readme"
+  "author": "Alexander Gorbunov",
+  "license": "MIT"
 }
