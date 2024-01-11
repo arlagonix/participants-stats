@@ -52,10 +52,6 @@
   <img src="./docs/results/poll2_desktop.png" width="100%">
 </p>
 
-<p align="center">
-  <img src="./docs/results/poll2_desktop_2.png" width="100%">
-</p>
-
 ## ℹ️ About
 
 I participated in a Pinapple Practice project, вот такие пироги. You can read more about it on their official website: https://pnpl.site/ or on their LinkedIn page: https://www.linkedin.com/company/pineapple-practice/. Keep in mind, everything is written in Russian.
