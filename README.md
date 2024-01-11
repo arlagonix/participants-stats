@@ -115,9 +115,8 @@ The project had a frontend part and a backend part. Here I publish a cut version
 
 ```Markdown
 ├── 📁 .github
-|   ├── 📁 workflows
-|   |   └── 📝 main.yaml      CI/CD instructions for Github Actions
-│   └── 📝 dependabot.yml     Instructions for Dependabot
+|   └── 📁 workflows
+|       └── 📝 main.yaml      CI/CD instructions for Github Actions
 |
 ├── 📁 docs                   Additional information, documentation
 │   └── 📁 results            Screenshots of how the application works after being fully developed
